@@ -13,7 +13,7 @@ def divide(x,y):
     if y!=0:
         return x/y
     else:
-        return "Cannot divide by zero"
+        return "Number cannot divide by zero"
     
 def power(x,y):
     return x**y
@@ -31,10 +31,10 @@ def calculator():
     print("5. Power")
     print("6. Square Root")
 
-    choice = input("Enter choice (1/2/3/4/5/6): ")
+    choice = input("Enter your choice: ")
 
     num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number (Enter 0 if not needed): "))
+    num2 = float(input("Enter the second number: "))
 
     if choice in ('1', '2', '3', '4', '5', '6'):
         if choice == '1':
@@ -50,8 +50,8 @@ def calculator():
         elif choice == '6':
             result = square_root(num1)
         
-        print(f"The result is: {result}")
+        print(f"The answer is: {result}")
     else:
-        print("Invalid input. Please enter a valid choice.")
+        print("Invalid input")
 
 calculator()
