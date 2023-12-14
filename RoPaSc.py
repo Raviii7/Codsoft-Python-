@@ -1,6 +1,6 @@
 import random
 
-def play_rps():
+def rps():
     choices = ['Rock', 'Paper', 'Scissors']
     
     user_choice = input("Choose Rock, Paper or Scissors: ")
@@ -20,4 +20,4 @@ def play_rps():
 
     print("Result:", result)
 
-play_rps()
+rps()
